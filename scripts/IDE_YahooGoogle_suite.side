@@ -1,0 +1,235 @@
+{
+  "id": "0ba06844-a290-4a45-ad5a-20122b3aa762",
+  "version": "1.1",
+  "name": "browse_news",
+  "url": "https://www.yahoo.com",
+  "tests": [{
+    "id": "19c4efc8-7c5d-4210-bdb6-78e10dc4f0f1",
+    "name": "googlenews",
+    "commands": [{
+      "id": "7b86051b-1d23-4de1-8153-e80bd3e1c330",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05931468-3f3c-485b-a0fa-2eda2f995399",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63f6ea43-0a9d-4b2c-a189-093fedb3dac1",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "news"
+    }, {
+      "id": "ff3fe8c1-866b-47dd-be96-c1ecbea511ee",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7c5dc4f1-3c40-4d05-a8c6-a2abe111032d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3.LC20lb",
+      "targets": [
+        ["css=h3.LC20lb", "css"],
+        ["xpath=//div[@id='rso']/div[2]/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//a/h3", "xpath:position"]
+      ],
+      "value": "Google News"
+    }, {
+      "id": "cf3b29d9-8990-47d4-9569-00ca777be19f",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3.LC20lb",
+      "targets": [
+        ["css=h3.LC20lb", "css"],
+        ["xpath=//div[@id='rso']/div[2]/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//a/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ffe58dc-af74-458a-8a6a-1679c485ad68",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//header[@id='gb']/div[4]/div[2]/div/c-wiz/div/div[11]/a/div[2]/span",
+      "targets": [
+        ["xpath=//header[@id='gb']/div[4]/div[2]/div/c-wiz/div/div[11]/a/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[11]/a/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d24c0ad7-ee73-423b-8182-fd9e568573bd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//header[@id='gb']/div[4]/div[2]/div/c-wiz/div/div[10]/a/div[2]/span",
+      "targets": [
+        ["xpath=//header[@id='gb']/div[4]/div[2]/div/c-wiz/div/div[10]/a/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[10]/a/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bdaee5d-5e1e-4df6-8001-ae7e8a807894",
+      "comment": "",
+      "command": "click",
+      "target": "css=span.ICsaqd",
+      "targets": [
+        ["css=span.ICsaqd", "css"],
+        ["xpath=//header[@id='gb']/div[4]/div[2]/div/c-wiz/div/div/a/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d2222b6d-6b71-4ae1-92b1-6a822331bdc5",
+    "name": "yahoonews",
+    "commands": [{
+      "id": "906936e0-1f69-4944-9f25-b829dcac7426",
+      "comment": "",
+      "command": "open",
+      "target": "https://news.yahoo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9114d8f-b0a7-416c-bf88-906187dbe35a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1400x855",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe029a08-a197-4188-8ee9-d87ef3ef5fc2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "link=Yahoo Originals",
+      "targets": [
+        ["link=Yahoo Originals", "link"],
+        ["css=.nr-applet-main-nav-item:nth-child(4) > .nr-applet-nav-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Yahoo Originals')]", "xpath:link"],
+        ["xpath=//div[@id='Nav-0-DesktopNav']/div/div[3]/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/originals/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd326edb-2e05-44ee-9f99-1e193afc7219",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,582)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "859fd5cb-c781-4b4e-851e-a0d3586c9dbd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1897)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c56f2cf-5fc0-41f2-b51e-6e5706d6d4db",
+      "comment": "",
+      "command": "click",
+      "target": "name=p",
+      "targets": [
+        ["name=p", "name"],
+        ["css=input[name=\"p\"]", "css"],
+        ["css=.O\\(0\\)", "css:finder"],
+        ["xpath=//input[@name='p']", "xpath:attributes"],
+        ["xpath=//div[@id='search-assist-input']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28a68972-85b2-4bf2-95b3-b21ca80c2dc6",
+      "comment": "",
+      "command": "type",
+      "target": "name=p",
+      "targets": [
+        ["name=p", "name"],
+        ["css=input[name=\"p\"]", "css"],
+        ["css=.O\\(0\\)", "css:finder"],
+        ["xpath=//input[@name='p']", "xpath:attributes"],
+        ["xpath=//div[@id='search-assist-input']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "technology"
+    }, {
+      "id": "2e2dbeae-0a04-4c3e-abf8-80a5e8422700",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Bgc\\(\\#c6d7ff\\) strong:nth-child(3)",
+      "targets": [
+        ["css=.Bgc\\(\\#c6d7ff\\) strong:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='search-assist-input']/div[2]/ul/li[2]/div/span/strong[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/div/span/strong[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03291348-d320-416f-8372-50a9284add3e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "link=Technology News Site Recode To Relaunch As Part Of Vox",
+      "targets": [
+        ["link=Technology News Site Recode To Relaunch As Part Of Vox", "link"],
+        ["css=.fst .fz-m", "css:finder"],
+        ["xpath=//div[@id='web']/ol/li/div/div[2]/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://r.search.yahoo.com/_ylt=AwrC1CptT9tbNmsA2CHQtDMD;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--/RV=2/RE=1541128174/RO=10/RU=https%3a%2f%2fdeadline.com%2fprint-article%2f1202493896%2f%3fKeepThis%3d1%26TB_iframe%3d1%26height%3d500%26width%3d750/RK=2/RS=gq7qjYT9aBRAIJjJLrio2kEcmfw-')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7ca48dd-97ae-43f9-82e4-979144e0bd32",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_10_0_1_1541099374496_265",
+      "targets": [
+        ["id=yui_3_10_0_1_1541099374496_265", "id"],
+        ["link=News", "link"],
+        ["css=#yui_3_10_0_1_1541099374496_265", "css"],
+        ["css=#yui_3_10_0_1_1541099374496_265", "css:finder"],
+        ["xpath=//a[contains(text(),'News')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_10_0_1_1541099374496_265']", "xpath:attributes"],
+        ["xpath=//li[@id='yucs-top-news']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://r.search.yahoo.com/_ylt=AwrC1CptT9tbNmsAsCHQtDMD/RV=2/RE=1541128173/RO=10/RU=https%3a%2f%2fwww.yahoo.com%2fnews/RK=2/RS=vd4ONwEYqL0iWZ.2Kmarr2S6h7Q-']", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "402e6b03-d224-48a0-bd31-754646359a2f",
+    "name": "News",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19c4efc8-7c5d-4210-bdb6-78e10dc4f0f1", "d2222b6d-6b71-4ae1-92b1-6a822331bdc5"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
